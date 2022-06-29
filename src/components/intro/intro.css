@@ -1,0 +1,85 @@
+.indicator {
+  position: relative;
+  animation-name: Bounce;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.intro-left-image {
+  background-image: url("../../../public/profile.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px;
+  border-radius: 20%;
+  transition: all 0.5s;
+  width: 650px;
+  height: 650px;
+}
+
+.intro-left-image:hover {
+  background-image: url("../../../public/profile2.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px;
+  transform: scale(1.02);
+  width: 650px;
+  height: 650px;
+}
+
+.intro-right-wrapper-name {
+  animation-name: Fade;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-cv-download {
+  transition: all 0.5s;
+}
+
+.button-cv-download:hover {
+  color: #10172a;
+  background-color: white;
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes Bounce {
+  0% {
+    top: 0px;
+  }
+  15% {
+    top: 15px;
+  }
+  30% {
+    top: 0px;
+  }
+  45% {
+    top: 10px;
+  }
+  60% {
+    top: 0px;
+  }
+  75% {
+    top: 5px;
+  }
+  90% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
