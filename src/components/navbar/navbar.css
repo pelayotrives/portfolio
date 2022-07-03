@@ -1,0 +1,9 @@
+.whole-bar {
+  position: fixed;
+  width: 100vw; /* vw mantiene el ancho total de la pantalla. */
+  z-index: 30; /* Para que no se solapen elementos por encima del fixed. */
+}
+
+.navbar-links {
+  list-style-type: none;
+}

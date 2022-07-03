@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter'
+import Indicator from '../indicator/Indicator'
 import './intro.css'
 // import { Cursor } from 'react-simple-typewriter'
 // import 'react-simple-typewriter/dist/index'
@@ -16,7 +17,7 @@ function Intro() {
     })
 
   return (
-    <div className='intro flex flex-row bg-black h-screen'>
+    <div id='intro' className='intro flex flex-row bg-black h-screen'>
 
         {/* ******** --------------------------- Left Aside (Image)  --------------------------- ******** */}
 
@@ -28,7 +29,7 @@ function Intro() {
 
         {/* ******** --------------------------- Right Aside  --------------------------- ******** */}
 
-        <div id='intro' className='intro-right flex-column justify-center justify-items-center content-center items-center self-center w-1/2'>
+        <div className='intro-right flex-col justify-center justify-items-center content-center items-center self-center w-1/2'>
 
           <div className='intro-right-wrapper px-10'>
             <h2 className='intro-right-wrapper-introduction text-3xl font-normal'>Welcome! My name is</h2>
@@ -43,27 +44,25 @@ function Intro() {
 
           <div className='intro-right-wrapper-description px-10'>
             <p className='intro-right-wrapper-description-paragraph text-lg mt-11'>
-            My specialty is developing digital products with optimal service. I love <span className='font-bold'>integrating new technologies</span> in my <span className='font-bold'>Full Stack</span> products. Do you want to know more about me? <br/> <span className='font-bold underline underline-offset-4'>Keep scrolling!</span>
+            My specialty is developing digital products with optimal service. I love <span className='font-bold'>integrating new technologies</span> in my <span className='font-bold text-red-700'>Full Stack</span> products. Do you want to know more about me? <br/> <span className='font-bold underline underline-offset-4'>Keep scrolling!</span>
             </p>
           </div>
 
           {/* ******** Buttons ******** */}
 
-          <div className='buttons-download flex flex-row justify-center justify-items-center content-center items-center self-center mt-10'>
+          <div className='buttons-download flex flex-row justify-center justify-items-center content-center items-center self-center mt-12'>
             <div className='button-cv-download bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/3 mx-5'>
-              <a href='../../../curriculum.pdf' download>Download CV</a>
+              <a href='/curriculum.pdf' download>Download CV</a>
             </div>
 
             <div className='button-cv-download bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/3 mx-5'>
-              <a href='https://flowcv.me/pelayotrives' rel='noreferrer' target={"_blank"}>More about me</a>
+              <a href="mailto:pelayotrivespozuelo@gmail.com?Subject=Portfolio%20|%20Quick%20chat%20from%20(insert%20your%20name)" rel='noreferrer' target={"_blank"}>Let's talk!</a>
             </div>
           </div>
           
           {/* ******** Scroll Arrow ******** */}
 
-          <div className='indicator flex justify-center m-8'>
-            <img src='../../../scroll.png' width={30} alt='Scroll arrow' />
-          </div>
+          <Indicator/>
 
         </div>
         

@@ -1,16 +1,24 @@
 import React from 'react'
 import './navbar.css'
 
+const capitalize = (text) => text.toUpperCase();
+
 function Navbar() {
   return (
-    <div className='bg-zinc-900'>
-        <div className="navbar-links">
-            <ul className='flex flex-row sm:justify-start justify-center p-5'>
-                <li className='mr-20 ml-5'><a href="#intro"><img src='../../home.png' width={25} alt='Home icon'/></a></li>
-                <li className='mr-20'><a href="#example">About</a></li>
-                <li className='mr-20'><a href="https://www.linkedin.com/in/pelayo-trives-pozuelo/">LinkedIn</a></li>
-                <li className='mr-5'><a href="https://github.com/pelayotrives">GitHub</a></li>
-            </ul>
+    <div className='whole-bar bg-zinc-800'>
+        <div className='navbar-links flex flex-row justify-between content-between'>
+
+            <div className='navbar-links-container-left flex flex-row sm:justify-start justify-center justify-items-center content-center items-center self-center p-5'>
+                <li className='mr-20 ml-5'><a className='name-icon font-semibold tracking-widest' href='#intro'>{capitalize("Pelayo Trives")}</a></li>
+            </div>
+
+            <div className='navbar-links-container-right flex flex-row justify-center justify-items-center content-center items-center self-center'>
+                <li className='mr-20'><a href='#about'>About</a></li>
+                <li className='mr-20'><a href='#skills-content-title'>Skills</a></li>
+                <li className='mr-20'><a href='#projects'>Projects</a></li>
+                <li className='mr-10'><a href='#contact'>Contact</a></li>
+            </div>
+
         </div>
     </div>
   )

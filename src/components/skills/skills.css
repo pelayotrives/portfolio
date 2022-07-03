@@ -1,0 +1,125 @@
+.skills-content-info {
+  max-width: 65ch;
+  text-align: center;
+}
+
+.button {
+  transition: all 0.5s;
+}
+
+.button:hover {
+  color: #10172a;
+  background-color: white;
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+}
+
+.chart {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start;
+    position: relative; */
+  height: 40px;
+  width: 50%;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-1,
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-5,
+.bar-6 {
+  box-shadow: 0 10px 40px -10px black;
+  border-radius: 100px;
+  background: #ffffff;
+  height: 70%;
+  width: 0;
+}
+
+.bar-1 {
+  animation: load1 3s normal forwards;
+}
+
+.bar-2 {
+  animation: load2 3.33s normal forwards;
+}
+
+.bar-3 {
+  animation: load3 3.66s normal forwards;
+}
+
+.bar-4 {
+  animation: load4 4s normal forwards;
+}
+
+.bar-5 {
+  animation: load5 4.33s normal forwards;
+}
+
+.bar-6 {
+  animation: load6 4.66s normal forwards;
+}
+
+@keyframes load1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}
+
+@keyframes load2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}
+
+@keyframes load3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}
+
+@keyframes load4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}
+
+@keyframes load5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}
+
+@keyframes load6 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
+}

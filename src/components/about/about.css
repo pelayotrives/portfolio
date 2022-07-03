@@ -1,0 +1,26 @@
+video {
+  margin: 0 auto;
+}
+
+.about-left-content {
+  max-width: 65ch;
+}
+
+.about-left-title {
+  height: 95px;
+  overflow: hidden;
+}
+
+.about-left-title-wrapper {
+  height: 100%;
+  animation: moving 2s ease-in-out infinite alternate;
+}
+
+@keyframes moving {
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-75px);
+  }
+}
