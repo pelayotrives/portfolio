@@ -1,0 +1,43 @@
+.projects-content-info {
+  max-width: 65ch;
+  text-align: center;
+}
+
+.card {
+  background: #27272a;
+  width: 25%;
+  border-radius: 15px;
+  transition: all .5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  border-radius: 15px 15px 0px 0px;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+
+#card-image-picture-1 {background-image: url("../../../public/app1.png");}
+#card-image-picture-2 {background-image: url("../../../public/app2.png");}
+#card-image-picture-3 {background-image: url("../../../public/app3.png");}
+
+.card-content {
+  padding: 30px;
+}
+
+.button {
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.button:hover {
+  color: #10172a;
+  background-color: white;
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+}

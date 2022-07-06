@@ -52,17 +52,17 @@ function Intro() {
 
           <div className='buttons-download flex flex-row justify-center justify-items-center content-center items-center self-center mt-12'>
             <div className='button-cv-download bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/3 mx-5'>
-              <a href='/curriculum.pdf' download>Download CV</a>
+              <button><a href='/curriculum.pdf' download>Download CV</a></button>
             </div>
 
             <div className='button-cv-download bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/3 mx-5'>
-              <a href="mailto:pelayotrivespozuelo@gmail.com?Subject=Portfolio%20|%20Quick%20chat%20from%20(insert%20your%20name)" rel='noreferrer' target={"_blank"}>Let's talk!</a>
+              <button><a href="mailto:pelayotrivespozuelo@gmail.com?Subject=Portfolio%20|%20Quick%20chat%20from%20(insert%20your%20name)" rel='noreferrer' target={"_blank"}>Let's talk!</a></button>
             </div>
           </div>
           
           {/* ******** Scroll Arrow ******** */}
 
-          <Indicator/>
+          <a href="#about"><Indicator/></a> 
 
         </div>
         

@@ -14,7 +14,7 @@ function Navbar() {
 
             <div className='navbar-links-container-right flex flex-row justify-center justify-items-center content-center items-center self-center'>
                 <li className='mr-20'><a href='#about'>About</a></li>
-                <li className='mr-20'><a href='#skills-content-title'>Skills</a></li>
+                <li className='mr-20'><a href='#skills'>Skills</a></li>
                 <li className='mr-20'><a href='#projects'>Projects</a></li>
                 <li className='mr-10'><a href='#contact'>Contact</a></li>
             </div>

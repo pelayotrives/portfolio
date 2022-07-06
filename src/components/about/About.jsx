@@ -28,12 +28,12 @@ function About() {
 
                 </div>
 
-                <Indicator/>
+                <a href="#skills"><Indicator/></a> 
 
         </div>
 
         <div className='about-right justify-center justify-items-center content-center items-center self-center w-1/2'>
-            <video width="85%" preload autoPlay controls>
+            <video width="85%" preload controls>
                 <source src="/videos/pitch.mp4" />
             </video>
         </div>

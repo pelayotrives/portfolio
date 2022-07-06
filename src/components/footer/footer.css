@@ -1,0 +1,9 @@
+.icon-footer {
+    transition: all .5s;
+    position: relative;
+}
+
+.icon-footer:hover {
+    transform: scale(1.2);
+    
+}

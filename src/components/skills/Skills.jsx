@@ -6,18 +6,17 @@ function Skills() {
   return (
     <div id='skills' className='skills bg-zinc-800 h-fit flex flex-col justify-center justify-items-center self-center'>
 
-            <br /><br />
             <div id='skills-content-title' className="skills-content-title flex flex-col justify-center justify-items-center content-center items-center self-center">
-                <h2 className='about-left-title-item text-7xl font-bold py-10'>Skills</h2>
-                <div className="skills-content-info text-lg py-10">
+                <h2 className='about-left-title-item text-7xl font-bold mt-32 mb-16'>Skills</h2>
+                <div className="skills-content-info text-lg mb-20">
                 <p>My skills are very diverse and cover a wide range of sectors: design, UX, UI, web development, application development, digital strategy management, marketing...</p>
                 </div>
             </div>
 
-            <div className="all-chart-wrapper">
+            <div className="all-chart-wrapper mb-20">
 
                     <div id='cw-1' className="chart-wrapper">
-                        <h5 className='mb-7 mt-7 font-bold'>HTML, CSS, Tailwind, Bootstrap</h5>
+                        <h5 className='mb-7 font-bold'>HTML, CSS, Tailwind, Bootstrap</h5>
                         <div className="chart">
                             <div className="bar-1"></div>
                             <span className="value text-white ml-3">90%</span>
@@ -57,7 +56,7 @@ function Skills() {
                     </div>
                     
                     <div id='cw-6' className="chart-wrapper">
-                        <h5 className='mb-7 mt-7 font-bold'>PHP, MySQL Arduino, Processing</h5>
+                        <h5 className='mb-7 mt-7 font-bold'>PHP, MySQL, Arduino, Processing</h5>
                         <div className="chart">
                             <div className="bar-6"></div>
                             <span className="value text-white ml-3">60%</span>
@@ -66,13 +65,11 @@ function Skills() {
 
             </div>
 
-            <div className='button bg-zinc-700 mt-20 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/4'>
-                <a href="https://www.linkedin.com/in/pelayo-trives-pozuelo/details/skills/" rel='noreferrer' target={"_blank"}>More skills!</a>
+            <div className='button bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/4'>
+                <button><a href="https://www.linkedin.com/in/pelayo-trives-pozuelo/details/skills/" rel='noreferrer' target={"_blank"}>More skills!</a></button>
             </div>
 
-            <div className='mb-14'>
-                <Indicator />
-            </div>
+            <a className='mb-32 mt-5' href="#projects"><Indicator/></a> 
 
     </div>
   )
