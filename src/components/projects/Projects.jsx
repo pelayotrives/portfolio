@@ -1,5 +1,6 @@
 import React from 'react'
 import './projects.css'
+import Indicator from '../indicator/Indicator'
 
 function Projects() {
   return (
@@ -12,7 +13,7 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="cards flex flex-row justify-center justify-items-center mb-32">
+            <div className="cards flex flex-row justify-center justify-items-center">
 
                 <div className="card rounded-lg shadow-2xl text-center">
                     <div id='card-image-picture-1' className="card-image"></div>
@@ -47,8 +48,9 @@ function Projects() {
                     </div>
                 </div>
 
-
             </div>
+
+            <a className='mb-32 mt-8' href="#contact"><Indicator /></a> 
 
     </div>
   )

@@ -1,0 +1,34 @@
+.title-contact {
+  max-width: 15ch;
+}
+
+.contact-form-question {
+  max-width: 65ch;
+}
+
+.button-form {
+  transition: all 0.5s;
+}
+
+.button-form:hover {
+  color: #10172a;
+  background-color: white;
+  /* transform: scale(1.05); */
+  transition-timing-function: ease-in-out;
+}
+
+input,
+textarea {
+  border-bottom: 2px solid white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(217, 217, 217);
+  opacity: 1;
+  line-height: normal;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+}

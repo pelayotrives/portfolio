@@ -7,3 +7,25 @@
 .navbar-links {
   list-style-type: none;
 }
+
+.page-title {
+  transition: all .5s;
+}
+
+.page-title:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  transition: all .5s;
+}
+
+.link:hover {
+  color: red;
+  transform: scale(1.05);
+}
+
+.link:active {
+  color: pink;
+  transform: scale(1.10);
+}
