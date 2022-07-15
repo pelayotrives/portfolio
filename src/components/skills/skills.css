@@ -46,27 +46,27 @@
   width: 0;
 }
 
-.bar-1 {
+.bar-1-animation {
   animation: load1 3s normal forwards;
 }
 
-.bar-2 {
+.bar-2-animation {
   animation: load2 3.33s normal forwards;
 }
 
-.bar-3 {
+.bar-3-animation {
   animation: load3 3.66s normal forwards;
 }
 
-.bar-4 {
+.bar-4-animation {
   animation: load4 4s normal forwards;
 }
 
-.bar-5 {
+.bar-5-animation {
   animation: load5 4.33s normal forwards;
 }
 
-.bar-6 {
+.bar-6-animation {
   animation: load6 4.66s normal forwards;
 }
 

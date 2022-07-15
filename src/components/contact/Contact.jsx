@@ -1,7 +1,38 @@
 import React from 'react'
+import { useRef } from 'react';
 import './contact.css'
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 
 function Contact() {
+
+  const [sentForm, setSentForm] = useState(false)
+  const [nameInput, setNameInput] = useState("")
+  const [subjectInput, setSubjectInput] = useState("")
+  const [emailInput, setEmailInput] = useState("")
+  const [messageInput, setMessageInput] = useState("")
+
+  const formRef = useRef();
+
+  const handleSubmit = (event) => {
+
+    event.preventDefault();
+
+    setNameInput("");
+    setSubjectInput("");
+    setEmailInput("");
+    setMessageInput("");
+
+    emailjs.sendForm('service_r0vujdo', 'template_76a9wwc', formRef.current, 'pYLrar-yeLxs5nqii')
+      .then((result) => {
+          console.log("Email sent.");
+          setSentForm(true);
+      }, (error) => {
+          console.log("There was an error sending your mail. Try again.");
+      });
+
+  }
+
   return (
     <div id='contact' className='contact bg-zinc-800 h-screen flex flex-row '>
 
@@ -31,12 +62,19 @@ function Contact() {
                 <div className="contact-form">
                     <p className='contact-form-question'><span className='font-bold text-lg'>You like what you see? Do you have any question?</span> You can contact me directly by filling out this form. I will be happy to answer you as soon as possible.</p>
                     <div className="contact-form-content">
-                        <form action="" className='flex flex-col mt-7'>
-                            <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Name' name='username' required/>
-                            <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Subject' name='subject' />
-                            <input className='bg-transparent text-white p-4 mt-7' type="email" placeholder='Email' name='email' required/>
-                            <textarea className='bg-transparent text-white p-4 mt-7' rows="4" name="message" placeholder='What do you want to talk about?'/>
-                            <button className='button-form bg-zinc-700 rounded-xl font-normal text-center p-4 mt-10 w-36'>Submit</button>
+                        <form ref={formRef} onSubmit={handleSubmit} className='flex flex-col mt-7'>
+                            <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Name' name='user_name' value={nameInput} onChange={event => setNameInput(event.target.value)} required/>
+                            <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Subject' name='user_subject' value={subjectInput} onChange={event => setSubjectInput(event.target.value)}/>
+                            <input className='bg-transparent text-white p-4 mt-7' type="email" placeholder='Email' name='user_email' value={emailInput} onChange={event => setEmailInput(event.target.value)} required/>
+                            <textarea className='bg-transparent text-white p-4 mt-7' rows="4" name="message" value={messageInput} onChange={event => setMessageInput(event.target.value)} placeholder='What do you want to talk about?'/>
+                            <div className="button-and-response flex-row">
+                                <button className='button-form bg-zinc-700 rounded-xl font-normal text-center p-4 mt-10 w-36'>Submit</button>
+                                {sentForm === true &&
+                                    <>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your time!
+                                    </>
+                                }
+                            </div>
                         </form>
                     </div>
                 </div>
