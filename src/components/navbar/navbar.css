@@ -29,3 +29,31 @@
   color: pink;
   transform: scale(1.10);
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links-container-left {
+    padding: 0;
+  }
+
+  .navbar-links-container-right {
+    padding: 17.5px;
+  }
+
+  .page-title {
+    margin: 0 auto;
+    font-size: 15px;
+    display: none;
+  }
+
+  .link {
+    margin: 0 auto;
+    padding: 0px 25px;
+    font-size: 15px;
+  }
+}

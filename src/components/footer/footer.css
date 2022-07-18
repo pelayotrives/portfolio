@@ -9,7 +9,7 @@
 }
 
 .icon-footer-up:hover {
-    transform: rotate(360deg);   
+    transform: scale(1.2) rotate(360deg);
 }
 
 .logo-footer-scroll {

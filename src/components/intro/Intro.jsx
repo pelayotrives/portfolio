@@ -9,7 +9,7 @@ function Intro() {
 
     // Usamos el hook de React Simple Typewriter
     const {text} = useTypewriter({
-      words: [ 'Full Stack Developer!', 'Multimedia Developer!', 'Designer!', 'Digital Strategy Manager!', 'Lifelong Learner!'], //* Frases que introduciremos.
+      words: [ 'Full Stack Developer!', 'Multimedia Developer!', 'Designer!', 'Strategy Manager!', 'Lifelong Learner!'], //* Frases que introduciremos.
       loop: 0, //* Infinito.
       typeSpeed: 75, //* Velocidad de typeo.
       deleteSpeed: 50, //* Velocidad de borrado.
@@ -62,7 +62,7 @@ function Intro() {
           
           {/* ******** Scroll Arrow ******** */}
 
-          <a href="#about"><Indicator/></a> 
+          <a className='indicator' href="#about"><Indicator/></a> 
 
         </div>
         

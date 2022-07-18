@@ -3,7 +3,7 @@
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 650px;
+  background-size: cover;
   border-radius: 20%;
   transition: all 0.5s;
   width: 650px;
@@ -15,10 +15,7 @@
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 650px;
   transform: scale(1.02);
-  width: 650px;
-  height: 650px;
 }
 
 .intro-right-wrapper-name {
@@ -47,4 +44,38 @@
   100% {
     opacity: 1;
   }
+}
+
+/************************ MEDIA QUERIES ************************/
+
+@media only screen and (max-width: 600px) {
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+  }
+
+  .intro-left, .intro-right {
+    width: 100%;
+  }
+
+  .intro-left-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+
+  .indicator {
+    margin-bottom: 70px;
+  }
+
+
 }
