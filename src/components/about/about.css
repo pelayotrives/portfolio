@@ -24,3 +24,45 @@ video {
     transform: translateY(-75px);
   }
 }
+
+.video-responsive {
+  display: none;
+}
+
+/************************ MEDIA QUERIES ************************/
+
+@media only screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .video-responsive {
+    display: flex;
+    width: 27em;
+  }
+
+  .about-right, .text-responsive {
+    display: none;
+  }
+
+  .about-left-title {
+    height: 5.25em;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3.75em;
+  }
+
+  .about-left-title-item {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .about-left-content {
+    margin-bottom: 15%;
+  }
+
+
+}

@@ -15,7 +15,7 @@ function Projects() {
 
             <div className="cards flex flex-row justify-center justify-items-center">
 
-                <div className="card rounded-lg shadow-2xl text-center">
+                <div className="card card-one rounded-lg shadow-2xl text-center">
                     <div id='card-image-picture-1' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>Save Mankind</h4>
@@ -26,7 +26,7 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="card rounded-lg shadow-2xl text-center mx-20">
+                <div className="card card-two rounded-lg shadow-2xl text-center mx-20">
                     <div id='card-image-picture-2' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>C-Wall Tracker</h4>
@@ -37,7 +37,7 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="card rounded-lg shadow-2xl text-center">
+                <div className="card card-three rounded-lg shadow-2xl text-center">
                     <div id='card-image-picture-3' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>Gamer Orbit</h4>
@@ -50,7 +50,7 @@ function Projects() {
 
             </div>
 
-            <a className='mb-32 mt-8' href="#contact"><Indicator /></a> 
+            <a className='projects-indicator mb-32 mt-8' href="#contact"><Indicator /></a> 
 
     </div>
   )

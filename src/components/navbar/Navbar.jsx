@@ -10,7 +10,6 @@ function Navbar() {
 
             <div className='navbar-links-container-left flex flex-row sm:justify-start justify-center justify-items-center content-center items-center self-center p-5'>
                 <li className='mr-20 ml-5 page-title'><a className='name-icon font-semibold tracking-widest' href='#intro'>{capitalize("Pelayo Trives")}</a></li>
-
             </div>
 
             <div className='navbar-links-container-right flex flex-row justify-center justify-items-center content-center items-center self-center'>

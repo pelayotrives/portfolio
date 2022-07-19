@@ -30,7 +30,14 @@
   transform: scale(1.10);
 }
 
+/************************ MEDIA QUERIES ************************/
+
 @media only screen and (max-width: 600px) {
+
+  .whole-bar {
+    width: 100%;
+  }
+
   .navbar-links {
     display: flex;
     flex-direction: column;
@@ -38,22 +45,20 @@
   }
 
   .navbar-links-container-left {
-    padding: 0;
+    padding: 0em;
   }
 
   .navbar-links-container-right {
-    padding: 17.5px;
+    padding: 1.25em;
   }
 
   .page-title {
-    margin: 0 auto;
-    font-size: 15px;
     display: none;
   }
 
   .link {
     margin: 0 auto;
-    padding: 0px 25px;
-    font-size: 15px;
+    padding: 0em 1.5em;
+    font-size: 1em;
   }
 }

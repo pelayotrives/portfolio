@@ -32,3 +32,19 @@ textarea::placeholder {
 .contact-wrapper {
     margin: 0 auto;
 }
+
+/************************ MEDIA QUERIES ************************/
+
+@media only screen and (max-width: 600px) {
+
+  .contact {
+    height: 100%;
+    text-align: center;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

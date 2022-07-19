@@ -41,3 +41,37 @@
   transform: scale(1.05);
   transition-timing-function: ease-in-out;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .projects-title {
+    font-size: 3.65em;
+    margin: 1em 0em 0em 0em;
+  }
+
+  .projects-content-info {
+    margin: 3.25em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .card-one, .card-two, .card-three {
+    width: 70%;
+  }
+
+  .card-two {
+    margin: 10% 0%;
+  }
+
+  .projects-indicator {
+    margin: 0;
+  }
+
+}

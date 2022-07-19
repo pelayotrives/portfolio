@@ -29,9 +29,9 @@ function Skills() {
     <div id='skills' className='skills bg-zinc-800 h-fit flex flex-col justify-center justify-items-center self-center'>
 
             <div id='skills-content-title' className="skills-content-title flex flex-col justify-center justify-items-center content-center items-center self-center">
-                <h2 className='about-left-title-item text-7xl font-bold mt-32 mb-16'>Skills</h2>
+                <h2 id='skills-title' className='about-left-title-item text-7xl font-bold mt-32 mb-16'>Skills</h2>
                 <div className="skills-content-info text-lg mb-20">
-                <p>My skills are very diverse and cover a wide range of sectors: design, UX, UI, web development, application development, digital strategy management, marketing...</p>
+                    <p>My skills are very diverse and cover a <span className='font-bold text-red-700'>wide range of sectors</span>: design, UX, UI, web development, application development, digital strategy management, marketing...</p>
                 </div>
             </div>
 
@@ -91,11 +91,11 @@ function Skills() {
 
             </Waypoint>
 
-            <div className='button bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/4'>
+            <div className='button button-skills bg-zinc-700 rounded-xl font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-4 w-1/4'>
                 <button><a href="https://www.linkedin.com/in/pelayo-trives-pozuelo/details/skills/" rel='noreferrer' target={"_blank"}>More skills!</a></button>
             </div>
 
-            <a className='mb-32 mt-5' href="#projects"><Indicator/></a> 
+            <a className='indicator-skills mb-32 mt-5' href="#projects"><Indicator/></a> 
 
     </div>
   )

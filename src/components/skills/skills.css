@@ -123,3 +123,28 @@
     width: 60%;
   } /* Este valor tiene que coincidir con el número que hay en el span value correspondiente. */
 }
+
+/************************ MEDIA QUERIES ************************/
+
+@media only screen and (max-width: 600px) {
+
+  #skills-title {
+    margin: 1em 0em 0em 0em;
+  }
+
+  .skills-content-info {
+    margin: 3.25em;
+  }
+
+  .indicator-skills {
+    margin: 0em;
+  }
+
+  .all-chart-wrapper {
+    margin-bottom: 3em;
+  }
+
+  .button-skills {
+    width: 40%;
+  }
+}
