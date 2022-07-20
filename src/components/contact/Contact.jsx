@@ -42,6 +42,7 @@ function Contact() {
 
             <div className="contact-left flex flex-col justify-center justify-items-center content-center items-center self-center p-16 w-1/2">
                 <h2 className="title-contact text-7xl font-bold self-start">Let's talk about new <span className='text-red-800'>projects</span>!</h2>
+                <h2 className="title-contact-responsive text-7xl font-bold self-start">Let's <span className='text-red-800'>&nbsp;talk</span>!</h2>
                 <div className="icon-wrapper flex flex-col self-start mt-20">
                     <div className="phone mb-12 flex flex-row items-center">
                         <img src="/phone.png" alt="Phone logo" width={40} />
@@ -53,25 +54,25 @@ function Contact() {
                     </div>
                     <div className="address flex flex-row items-center">
                         <img src="/address.png" alt="Address logo" width={40} />
-                        <address className='not-italic ml-10 text-lg'>Plaza de Manolete, 3, 28020, Madrid, Spain</address>
+                        <address className='not-italic ml-10 text-lg'>Plaza Manolete, 3, 28020, Madrid, ES</address>
                     </div>
                 </div>
             </div>
 
             <div className="contact-right flex content-center items-center self-center p-12 w-1/2">
                 <div className="contact-form">
-                    <p className='contact-form-question'><span className='font-bold text-lg'>You like what you see? Do you have any question?</span> You can contact me directly by filling out this form. I will be happy to answer you as soon as possible.</p>
+                    <p className='text-form-responsive contact-form-question'><span className='font-bold text-lg'>You like what you see? Do you have any question?</span> You can contact me directly by filling out this form. I will be happy to answer you as soon as possible.</p>
                     <div className="contact-form-content">
                         <form ref={formRef} onSubmit={handleSubmit} className='flex flex-col mt-7'>
-                            <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Name' name='user_name' value={nameInput} onChange={event => setNameInput(event.target.value)} required/>
+                            <input className='input-one bg-transparent text-white p-4 mt-7' type="text" placeholder='Name' name='user_name' value={nameInput} onChange={event => setNameInput(event.target.value)} required/>
                             <input className='bg-transparent text-white p-4 mt-7' type="text" placeholder='Subject' name='user_subject' value={subjectInput} onChange={event => setSubjectInput(event.target.value)}/>
                             <input className='bg-transparent text-white p-4 mt-7' type="email" placeholder='Email' name='user_email' value={emailInput} onChange={event => setEmailInput(event.target.value)} required/>
                             <textarea className='bg-transparent text-white p-4 mt-7' rows="4" name="message" value={messageInput} onChange={event => setMessageInput(event.target.value)} placeholder='What do you want to talk about?'/>
-                            <div className="button-and-response flex-row">
-                                <button className='button-form bg-zinc-700 rounded-xl font-normal text-center p-4 mt-10 w-36'>Submit</button>
+                            <div className="button-and-response flex flex-row mt-9">
+                                <button className='button-form bg-zinc-700 rounded-xl font-normal text-center p-4 w-48'>Submit</button>
                                 {sentForm === true &&
                                     <>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thanks for your time!
+                                        <p className='text-thanks flex flex-row justify-center justify-items-center items-center ml-8'>Thanks for your time!</p>
                                     </>
                                 }
                             </div>
