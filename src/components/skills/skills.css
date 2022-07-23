@@ -23,7 +23,7 @@
   /* justify-content: flex-start;
     position: relative; */
   height: 40px;
-  width: 50%;
+  width: 60%;
 }
 
 .chart-wrapper {
@@ -126,6 +126,8 @@
 
 /************************ MEDIA QUERIES ************************/
 
+/************************ Mobile ************************/
+
 @media only screen and (max-width: 600px) {
 
   #skills-title {
@@ -147,5 +149,55 @@
 
   .button-skills {
     width: 40%;
+  }
+}
+
+/************************ Tablets ************************/
+
+@media only screen and (min-width:601px) and (max-width: 900px) {
+  #skills-title {
+    margin: 1em 0em 0em 0em;
+    font-size: 4em;
+  }
+
+  .skills-content-info {
+    margin: 3.25em;
+  }
+
+  .indicator-skills {
+    margin: 0em;
+  }
+
+  .all-chart-wrapper {
+    margin-bottom: 3em;
+  }
+
+  .button-skills {
+    width: 30%;
+  }
+}
+
+/************************ Larger devices ************************/
+
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+  #skills-title {
+    margin: 1em 0em 0em 0em;
+    font-size: 4em;
+  }
+
+  .skills-content-info {
+    margin: 3.25em;
+  }
+
+  .indicator-skills {
+    margin: 0em;
+  }
+
+  .all-chart-wrapper {
+    margin-bottom: 3em;
+  }
+
+  .button-skills {
+    width: 25%;
   }
 }

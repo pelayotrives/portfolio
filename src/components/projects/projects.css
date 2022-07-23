@@ -42,10 +42,14 @@
   transition-timing-function: ease-in-out;
 }
 
+/************************ MEDIA QUERIES ************************/
+
+/************************ Mobile ************************/
+
 @media only screen and (max-width: 600px) {
 
   .projects-title {
-    font-size: 4em;
+    font-size: 3.75em;
     margin: 1em 0em 0em 0em;
   }
 
@@ -74,4 +78,106 @@
     margin: 0;
   }
 
+}
+
+/************************ Tablets ************************/
+
+@media only screen and (min-width:601px) and (max-width: 900px) {
+
+  .projects-title {
+    font-size: 3.75em;
+    margin: 1em 0em 0em 0em;
+  }
+
+  .projects-content-info {
+    margin: 3.25em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .card-one, .card-two, .card-three {
+    width: 75%;
+  }
+
+  .card-two {
+    margin: 10% 0%;
+  }
+
+  .projects-indicator {
+    margin: 0;
+  }
+
+}
+
+/************************ Larger devices ************************/
+
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+  .projects-title {
+    font-size: 3.75em;
+    margin: 1em 0em 0em 0em;
+  }
+
+  .projects-content-info {
+    margin: 3.25em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .card-one, .card-two, .card-three {
+    width: 75%;
+  }
+
+  .card-two {
+    margin: 10% 0%;
+  }
+
+  .projects-indicator {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+  .projects-title {
+    font-size: 3.75em;
+    margin: 1em 0em 0em 0em;
+  }
+
+  .projects-content-info {
+    margin: 3.25em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .card-one, .card-two, .card-three {
+    width: 25%;
+  }
+
+  .card-two {
+    margin: 0% 5%;
+  }
+
+  .projects-indicator {
+    margin: 0;
+  }
 }

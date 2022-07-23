@@ -19,7 +19,7 @@ function Projects() {
                     <div id='card-image-picture-1' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>Save Mankind</h4>
-                        <p className='mb-7'>A cool JavaScript game made with canvas. Really easy and fun to play!</p>
+                        <p className='mb-7'>A cool JavaScript game made with canvas. Really easy to play!</p>
                         <div className='button bg-zinc-700 rounded-md font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-3 w-1/2'>
                             <button><a href='https://pelayotrives.github.io/save-mankind/' rel="noreferrer" target={"_blank"}>See project</a></button>
                         </div>
@@ -41,7 +41,7 @@ function Projects() {
                     <div id='card-image-picture-3' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>Gamer Orbit</h4>
-                        <p className='mb-7'>Keep your collection in order and list your wished and favorite games!</p>
+                        <p className='mb-7'>Keep your collection in order and list your favorite games!</p>
                         <div className='button bg-zinc-700 rounded-md font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-3 w-1/2'>
                             <button><a href='https://gamer-orbit.netlify.app/' rel="noreferrer" target={"_blank"}>See project</a></button>
                         </div>

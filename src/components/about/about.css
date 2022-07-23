@@ -31,6 +31,8 @@ video {
 
 /************************ MEDIA QUERIES ************************/
 
+/************************ Mobile ************************/
+
 @media only screen and (max-width: 600px) {
   .about {
     display: flex;
@@ -44,7 +46,8 @@ video {
     width: 27em;
   }
 
-  .about-right, .text-responsive {
+  .about-right,
+  .text-responsive {
     display: none;
   }
 
@@ -63,6 +66,117 @@ video {
   .about-left-content {
     margin-bottom: 15%;
   }
+}
 
+/************************ Tablets ************************/
 
+@media only screen and (min-width:601px) and (max-width: 720px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .video-responsive {
+    display: flex;
+    width: 33em;
+  }
+
+  .about-right,
+  .text-responsive {
+    display: none;
+  }
+
+  .about-left-title {
+    height: 5.25em;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3.75em;
+  }
+
+  .about-left-title-item {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .about-left-content {
+    margin-bottom: 15%;
+  }
+  
+}
+
+@media only screen and (min-width:721px) and (max-width: 900px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .video-responsive {
+    display: flex;
+    width: 38em;
+  }
+
+  .about-right,
+  .text-responsive {
+    display: none;
+  }
+
+  .about-left-title {
+    height: 5.25em;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3.75em;
+  }
+
+  .about-left-title-item {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .about-left-content {
+    margin-bottom: 15%;
+  }
+  
+}
+
+/************************ Larger devices ************************/
+
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .video-responsive {
+    display: flex;
+    width: 38em;
+  }
+
+  .about-right,
+  .text-responsive {
+    display: none;
+  }
+
+  .about-left-title {
+    height: 5.25em;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 3.75em;
+  }
+
+  .about-left-title-item {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .about-left-content {
+    margin-bottom: 15%;
+  }
 }

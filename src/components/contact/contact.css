@@ -39,6 +39,8 @@ textarea::placeholder {
 
 /************************ MEDIA QUERIES ************************/
 
+/************************ Mobile ************************/
+
 @media only screen and (max-width: 600px) {
 
   .contact {
@@ -118,5 +120,168 @@ textarea::placeholder {
     align-self: center;
     text-align: center;
   }
+}
 
+/************************ Tablets ************************/
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+  .contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-left, .contact-right {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contact-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-wrapper {
+    margin: 0;
+    margin-bottom: 3em;
+  }
+
+  .title-contact-responsive {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 4em;
+  }
+
+  .left-bar, .title-contact, .text-form-responsive {
+    display: none;
+  }
+
+  form {
+    margin-top: 0 !important;
+    margin-bottom: 4em;
+  }
+
+  .input-one {
+    margin-top: 0;
+  }
+
+  .contact-form-content {
+    width: 25em;
+  }
+
+  .button-and-response {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .text-thanks {
+    margin: 0 auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
+  .contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-left, .contact-right {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contact-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-wrapper {
+    margin: 0;
+    margin-bottom: 3em;
+  }
+
+  .title-contact-responsive {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 4em;
+  }
+
+  .left-bar, .title-contact, .text-form-responsive {
+    display: none;
+  }
+
+  form {
+    margin-top: 0 !important;
+    margin-bottom: 4em;
+  }
+
+  .input-one {
+    margin-top: 0;
+  }
+
+  .contact-form-content {
+    width: 25em;
+  }
+
+  .button-and-response {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .text-thanks {
+    margin: 0 auto;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
 }
