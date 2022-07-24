@@ -7,7 +7,7 @@ import Footer from "./components/footer/Footer";
 import Projects from "./components/projects/Projects";
 import Contact from './components/contact/Contact';
 import { motion } from "framer-motion"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
     animate: {
       opacity: 0,
       transition: {
-        duration: 0.25,
+        duration: 0.5,
         when: "afterChildren",
       },
     },
@@ -56,16 +56,19 @@ function App() {
 
   const text = {
     initial: {
-      y: 40,
+      y: 20,
     },
     animate: {
-      y: 90,
+      y: 95,
       transition: {
         duration: 1.5,
         ease: [0.87, 0, 0.13, 1],
       },
     },
   };
+
+  // Declaramos la ref en la función principal.
+  const addPointerEventsNone = useRef();
 
   //! ****************** Función principal de Framer Motion ******************
 
@@ -80,11 +83,15 @@ function App() {
             onAnimationStart={() => document.body.classList.add("overflow-hidden")}
                 onAnimationComplete={() => {
                     document.body.classList.remove("overflow-hidden");
+                    //! Mediante pointer-events-none, se puede clicar A TRAVÉS del contenedor, para poder acceder a los <a> sin
+                    //! que haya overlapping.
+                    addPointerEventsNone.current.classList = addPointerEventsNone.current.classList + " pointer-events-none"
                 }
                 }
           >
 
-            <motion.svg variants={textContainer} className="absolute z-50 flex">
+            {/* Aplicamos la ref al SVG. */}
+            <motion.svg variants={textContainer} ref={addPointerEventsNone} className="absolute w-11/12 z-50 flex">
                 <pattern
                   id="pattern"
                     patternUnits="userSpaceOnUse"
@@ -92,11 +99,13 @@ function App() {
                     height={800}
                     className="text-white"
                 >
-                    <rect className="w-full h-full fill-current" />
+                    <rect className="w-full h-full fill-current text-red-600" />
+
                     <motion.rect
                       variants={text}
-                      className="w-full h-full text-gray-600 fill-current"
+                      className="w-full h-full text-white fill-current"
                     />
+
                 </pattern>
 
                 <text

@@ -14,7 +14,7 @@ function Skills() {
   const selectorRef6 = useRef();
 
   const loadElements = () => {
-    console.log(selectorRef1.current);
+    // console.log(selectorRef1.current);
     // Con esto añadimos la clase cuando triggerea el evento con el onenter={} de Waypoints
     selectorRef1.current.className = selectorRef1.current.className + " bar-1-animation"
     selectorRef2.current.className = selectorRef2.current.className + " bar-2-animation"
