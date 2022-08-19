@@ -6,6 +6,8 @@
     animation-iteration-count: infinite;
   }
   
+  /* Bouncy animation. */
+
   @keyframes Bounce {
     0% {
       top: 0px;

@@ -1,6 +1,8 @@
 import React from 'react'
 import './indicator.css'
 
+// Just to get acces to it in a quick way.
+
 function Indicator() {
   return (
     <div>
