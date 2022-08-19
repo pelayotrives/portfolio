@@ -30,7 +30,7 @@ function Projects() {
                     <div id='card-image-picture-2' className="card-image"></div>
                     <div className="card-content">
                         <h4 className='text-2xl font-bold mb-5'>C-Wall Tracker</h4>
-                        <p className='mb-7'>Check the market easily! Track and manage your favorite cryptos!</p>
+                        <p className='mb-7'>Check the market easily! Track and manage your cryptos!</p>
                         <div className='button bg-zinc-700 rounded-md font-normal text-center flex justify-center justify-items-center content-center items-center self-center p-3 w-1/2'>
                             <button><a href='https://cwall-tracker.herokuapp.com/' rel="noreferrer" target={"_blank"}>See project</a></button>
                         </div>
