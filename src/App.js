@@ -1,11 +1,11 @@
 import './App.css'
-import Intro from "./components/intro/Intro";
-import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Footer from "./components/footer/Footer";
-import Projects from "./components/projects/Projects";
-import Contact from './components/contact/Contact';
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import Contact from './components/Contact';
 import { motion } from "framer-motion"
 import { useState, useEffect, useRef } from 'react';
 
@@ -127,9 +127,9 @@ function App() {
     {initial && <Init/>}
       <Navbar />
       <Intro />
-      <About />  
+      <About />
+      <Projects /> 
       <Skills />
-      <Projects />
       <Contact />
       <Footer />   
     </div>
