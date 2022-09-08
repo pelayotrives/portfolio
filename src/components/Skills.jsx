@@ -41,14 +41,15 @@ function Skills() {
 
     <div id='skills' className='skills flex flex-col justify-center justify-items-center self-center bg-zinc-900'>
         
-        <div className="skills-container flex flex-col justify-center justify-items-center content-center items-center self-center w-3/6">
+        <div className="skills-container flex flex-col justify-center justify-items-center content-center items-center self-center w-4/6 md:w-3/6">
 
             <div id='skills-content-title' className="skills-content-title flex flex-col justify-center justify-items-center content-center items-center self-center">
                 <h2 className='projects-title text-6xl font-bold my-6'>Skills</h2>
             </div>
 
             <div className="skills-content">
-                <p className="text-justify">My skills cover a wide range of possibilities and I am proficient in several tools. The sectors that I highlight the most are <span className='font-bold text-red-700'>Programming</span> (Full Stack Development) and <span className='font-bold text-red-700'>Digital Development</span> (UX/UI, Multimedia Development and Graphic Design). However, my training also extends to branches such as <span className='font-bold text-red-700'>Digital Strategy</span> and <span className='font-bold text-red-700'>Digital Marketing</span>. Do you want to know a little more about my skills? So, keep scrolling to see them graphically!</p>
+                <p className="text-justify hidden xmd:block">My skills cover a wide range of possibilities and I am proficient in several tools. The sectors that I highlight the most are <span className='font-bold text-red-700'>Programming</span> (Full Stack Development) and <span className='font-bold text-red-700'>Digital Development</span> (UX/UI, Multimedia Development and Graphic Design). However, my training also extends to branches such as <span className='font-bold text-red-700'>Digital Strategy</span> and <span className='font-bold text-red-700'>Digital Marketing</span>. Do you want to know a little more about my skills? So, keep scrolling to see them graphically!</p>
+                <p className="text-justify block xmd:hidden">My skills cover a wide range of possibilities and I am proficient in several tools. The sectors that I highlight the most are <span className='font-bold text-red-700'>Programming</span> (Full Stack Development) and <span className='font-bold text-red-700'>Digital Development</span> (UX/UI, Multimedia Development and Graphic Design).</p>
             </div>
 
             <div className="programming-icons flex flex-row justify-between justify-items-center items-center content-center self-center my-6 w-full">
