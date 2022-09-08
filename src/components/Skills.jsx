@@ -52,7 +52,7 @@ function Skills() {
                 <p className="text-justify block xmd:hidden">My skills cover a wide range of possibilities and I am proficient in several tools. The sectors that I highlight the most are <span className='font-bold text-red-700'>Programming</span> (Full Stack Development) and <span className='font-bold text-red-700'>Digital Development</span> (UX/UI, Multimedia Development and Graphic Design).</p>
             </div>
 
-            <div className="programming-icons flex flex-row justify-between justify-items-center items-center content-center self-center my-6 w-full">
+            <div className="programming-icons hidden xmd:flex flex-row justify-between justify-items-center items-center content-center self-center my-6 w-full">
                 <SiJavascript size={25}/>
                 <SiReact size={25}/>
                 <SiExpress size={25}/>
@@ -65,7 +65,25 @@ function Skills() {
                 <SiMysql size={25}/>
                 <SiGit size={25}/>
                 <SiTailwindcss size={25}/>
+            </div>
 
+            <div className="programming-icons-responsive xmd:hidden flex flex-col justify-between justify-items-center items-center content-center self-center my-6 w-full">
+                <div className="row-1 flex flex-row justify-between justify-items-center items-center content-center self-center w-full mb-4">
+                    <SiJavascript size={25}/>
+                    <SiReact size={25}/>
+                    <SiExpress size={25}/>
+                    <SiNodedotjs size={25}/>
+                    <SiHtml5 size={25}/>
+                    <SiCss3 size={25}/>
+                </div>
+                <div className="row-2 flex flex-row justify-between justify-items-center items-center content-center self-center w-full">
+                    <SiBootstrap size={25}/>
+                    <SiMongodb size={25}/>
+                    <SiPhp size={25}/>
+                    <SiMysql size={25}/>
+                    <SiGit size={25}/>
+                    <SiTailwindcss size={25}/>
+                </div>
             </div>
 
             <Waypoint onEnter={loadElements}>

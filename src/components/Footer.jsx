@@ -18,7 +18,7 @@ function Footer() {
         </div>
 
         <div className="copyright text-center p-2">
-            <p className='text-xs'>All Rights Reserved © 2022 &nbsp; | &nbsp; Original design by Pelayo Trives Pozuelo &nbsp;</p>
+            <p className='text-xs'>All Rights Reserved © 2022 &nbsp; | &nbsp; Designed by Pelayo Trives</p>
             
         </div>
     </div>

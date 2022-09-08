@@ -7,10 +7,10 @@ function About() {
 
       <div className="about-container w-4/6 md:w-3/6">
 
-        <div className="about-title overflow-hidden h-20 my-6">
+        <div className="about-title overflow-hidden h-[2.75rem] sm:h-[5.45rem] xl:h-20 my-6">
           <div className="about-title-wrapper text-center animate-alternate h-full">
-            <h2 className="about-title-item-one text-6xl font-bold">About me...</h2><br />
-            <h2 className="about-title-item-two text-6xl font-bold">...and more <span className="text-responsive">stuff.</span></h2><br />
+            <h2 className="about-title-item-one text-4xl sm:text-5xl xmd:text-6xl font-bold mb-[2.15rem] sm:mb-[2.2rem]">About me...</h2>
+            <h2 className="about-title-item-two text-4xl sm:text-5xl xmd:text-6xl font-bold">...and more.</h2><br />
           </div>
         </div>
 
@@ -24,13 +24,14 @@ function About() {
                 <article className="work-timeline-element lg:hover:animate-microzoom transition-all bg-black hover:bg-zinc-800 hover:shadow-xl rounded-lg p-6">
                     <a rel="noopener noreferrer" href="https://www.linkedin.com/in/pelayo-trives-pozuelo/">
                         <div className="work-container flex flex-col w-full">
-                            <div className="date-and-name flex flex-row justify-between justify-items-center items-end content-end">
-                                <h3 className="font-bold text-lg"> <span className="text-red-700">SEM & SEO Specialist</span> &nbsp; | &nbsp; 123 Innovation Group S.L. (Einnova)</h3>
-                                <time dateTime="" className="italic">Jul, 2021 – Jan, 2022</time>
+                            <div className="date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">
+                                <h3 className="font-bold text-md sm:text-lg text-red-700">SEM & SEO Specialist</h3>
+                                <time dateTime="" className="italic font-light my-1 xlg:my-0">Jul, 2021 – Jan, 2022</time>
                             </div>
+                            <h4 className="text-sm font-semibold date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">123 Innovation Group S.L.</h4>
                             <hr className="my-3"/>
                             <ul>
-                                <li>• I optimized the campaign budget of 5 clients by 50% with an increase in ROI improvement of 15%. I managed their databases and incorporated JavaScript into their SPAs.</li>
+                                <li className="mb-2">• I optimized the campaign budget of 5 clients by 50% with an increase in ROI improvement of 15%. I managed their databases and incorporated JavaScript into their SPAs.</li>
                                 <li>• I debugged the code of more than 10 PHP templates in WordPress.</li>
                             </ul>
                         </div>
@@ -42,14 +43,15 @@ function About() {
                 <article className="work-timeline-element lg:hover:animate-microzoom transition-all bg-black hover:bg-zinc-800 hover:shadow-xl rounded-lg p-6 my-6">
                     <a rel="noopener noreferrer" href="https://www.linkedin.com/in/pelayo-trives-pozuelo/">
                         <div className="work-container flex flex-col w-full">
-                            <div className="date-and-name flex flex-row justify-between justify-items-center items-end content-end">
-                                <h3 className="font-bold text-lg"> <span className="text-red-700">Social Media Assessor</span> &nbsp; | &nbsp; Lionbridge Technologies, Inc.</h3>
-                                <time dateTime="" className="italic">Mar, 2020 – Oct, 2020</time>
+                            <div className="date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">
+                                <h3 className="font-bold text-md sm:text-lg text-red-700">Social Media Assessor</h3>
+                                <time dateTime="" className="italic font-light my-1 xlg:my-0">Mar, 2020 – Oct, 2020</time>
                             </div>
+                            <h4 className="text-sm font-semibold date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">Lionbridge Spain S.L.</h4>
                             <hr className="my-3"/>
                             <ul>
-                            <li>• I performed content optimization tasks with rates above 85% effectiveness.</li>
-                                    <li>• I promoted an improvement to the webinar system by optimizing the content rating tools and simplifying the interface by 25%.</li>
+                                <li className="mb-2">• I performed content optimization tasks with rates above 85% effectiveness.</li>
+                                <li>• I promoted an improvement to the webinar system by optimizing the content rating tools and simplifying the interface by 25%.</li>
                             </ul>
                         </div>
                     </a>
@@ -60,14 +62,15 @@ function About() {
                 <article className="work-timeline-element lg:hover:animate-microzoom transition-all bg-black hover:bg-zinc-800 hover:shadow-xl rounded-lg p-6">
                     <a rel="noopener noreferrer" href="https://www.linkedin.com/in/pelayo-trives-pozuelo/">
                         <div className="work-container flex flex-col w-full">
-                            <div className="date-and-name flex flex-row justify-between justify-items-center items-end content-end">
-                                <h3 className="font-bold text-lg"> <span className="text-red-700">Multimedia Developer</span> &nbsp; | &nbsp; The Three Dragons S.L.</h3>
-                                <time dateTime="" className="italic">Jun, 2018 – May, 2020</time>
+                            <div className="date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">
+                                <h3 className="font-bold text-md sm:text-lg text-red-700">Multimedia Developer</h3>
+                                <time dateTime="" className="italic font-light my-1 xlg:my-0">Jun, 2018 – May, 2020</time>
                             </div>
+                            <h4 className="text-sm font-semibold date-and-name flex flex-col xlg:flex-row justify-center xlg:justify-between justify-items-center items-center xlg:items-end content-end">The Three Dragons S.L.</h4>
                             <hr className="my-3"/>
                             <ul>
-                            <li>• I supervised the digital business strategy of more than 8 clients and boosted the online reputation through the creation of SPA websites.</li>
-                                    <li>• I developed 20+ multimedia products in different formats for B2C companies and private customers.</li>
+                                <li className="mb-2">• I supervised the digital business strategy of more than 8 clients and boosted the online reputation through the creation of SPA websites.</li>
+                                <li>• I developed 20+ multimedia products in different formats for B2C companies and private customers.</li>
                             </ul>
                         </div>
                     </a>

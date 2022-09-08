@@ -91,7 +91,7 @@ function App() {
           >
 
             {/* Aplicamos la ref al SVG. */}
-            <motion.svg variants={textContainer} ref={addPointerEventsNone} className="absolute w-11/12 z-50 flex">
+            <motion.svg variants={textContainer} ref={addPointerEventsNone} className="absolute w-full z-50 flex">
                 <pattern
                   id="pattern"
                     patternUnits="userSpaceOnUse"
@@ -109,7 +109,7 @@ function App() {
                 </pattern>
 
                 <text
-                  className="text-6xl font-bold"
+                  className="text-5xl font-bold"
                   text-anchor="middle"
                   x="50%"
                   y="50%"
