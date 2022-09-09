@@ -37,7 +37,7 @@ function Contact() {
     <div id='contact' className='contact flex flex-col justify-center justify-items-center content-center items-center self-center bg-zinc-800'>
       
       <div className="presentation-container-greeting flex flex-col justify-center justify-items-center content-center items-center self-center w-4/6 md:w-3/6">
-        <h2 className="text-6xl font-bold my-6">Contact</h2>
+        <h2 className="text-4xl sm:text-5xl xmd:text-6xl font-bold my-6">Contact</h2>
       </div>
 
       <div className="skills-content w-4/6 md:w-3/6">

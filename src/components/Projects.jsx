@@ -19,7 +19,7 @@ function Projects() {
 
         <div className="projects-container flex flex-col justify-center justify-items-center items-center content-center self-center">
             <div id='projects-content-title' className="projects-content-title flex flex-col justify-center justify-items-center content-center items-center self-center w-3/6">
-                <h2 className='projects-title text-6xl font-bold my-6'>Projects</h2>
+                <h2 className='projects-title text-4xl sm:text-5xl xmd:text-6xl font-bold my-6'>Projects</h2>
             </div>
 
             <div className="about-content mb-6 w-4/6 md:w-3/6">

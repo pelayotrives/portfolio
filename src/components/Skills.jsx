@@ -44,7 +44,7 @@ function Skills() {
         <div className="skills-container flex flex-col justify-center justify-items-center content-center items-center self-center w-4/6 md:w-3/6">
 
             <div id='skills-content-title' className="skills-content-title flex flex-col justify-center justify-items-center content-center items-center self-center">
-                <h2 className='projects-title text-6xl font-bold my-6'>Skills</h2>
+                <h2 className='projects-title text-4xl sm:text-5xl xmd:text-6xl font-bold my-6'>Skills</h2>
             </div>
 
             <div className="skills-content">
