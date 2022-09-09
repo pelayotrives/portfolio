@@ -50,12 +50,12 @@ function Intro() {
         <p className="text-justify block xmd:hidden">I am a Spanish developer who loves solving problems, <span className="font-bold text-red-700">programming</span> and overcoming obstacles day by day. My specialty is <span className="font-bold text-red-700">developing digital products</span> with optimal service.</p>
       </div>
 
-      <div className='buttons-info flex flex-row justify-evenly justify-items-center content-center items-center self-center w-3/6 my-6'>
+      <div className='buttons-info flex flex-col xlg:flex-row justify-evenly justify-items-center content-center items-center self-center w-3/6 my-6'>
         <div className='button-cv flex justify-center justify-items-center content-center items-center self-center font-normal text-center bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 cursor-pointer rounded-md p-4 w-48'>
           <button><a href={CV} download="CV_PelayoTrives.pdf">Download CV</a></button>
         </div>
 
-        <div className='button-email flex justify-center justify-items-center content-center items-center self-center font-normal text-center bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 cursor-pointer rounded-md p-4 w-48'>
+        <div className='button-email flex justify-center justify-items-center content-center items-center self-center font-normal text-center bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 cursor-pointer rounded-md p-4 w-48 mt-4 xlg:mt-0'>
           <button><a href="mailto:pelayotrivespozuelo@gmail.com?Subject=Portfolio%20|%20Quick%20chat%20from%20(insert%20your%20name)" rel='noreferrer' target={"_blank"}>Let's talk!</a></button>
         </div>
       </div>

@@ -164,7 +164,7 @@ function Skills() {
 
             </Waypoint>
 
-            <div className='button-more flex flex-row justify-evenly justify-items-center content-center items-center self-center w-3/6 my-6'>
+            <div className='button-more flex flex-row justify-evenly justify-items-center content-center items-center self-center my-6'>
                 <div className='button-more-skills flex justify-center justify-items-center content-center items-center self-center font-normal text-center bg-zinc-700 hover:bg-zinc-600 active:bg-zinc-500 cursor-pointer rounded-md p-4 w-48'>
                     <button><a href='https://www.linkedin.com/in/pelayo-trives-pozuelo/details/skills/'>More skills</a></button>
                 </div>
@@ -172,7 +172,7 @@ function Skills() {
 
         </div>
 
-        <a className='flex justify-center justify-items-center items-center content-center self-center animate-bounce w-3/6 mb-6' href="#contact"><Indicator/></a>
+        <a className='flex justify-center justify-items-center items-center content-center self-center animate-bounce w-3/6 mb-6' href="#faq"><Indicator/></a>
 
     </div>
   )

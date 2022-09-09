@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Contact from './components/Contact';
+import FAQ from './components/FAQ';
 import { motion } from "framer-motion"
 import { useState, useEffect, useRef } from 'react';
 
@@ -122,7 +123,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="App scroll-smooth">
     {/* Si initial es true, invocamos el componente de función de Init */}
     {initial && <Init/>}
       <Navbar />
@@ -130,6 +131,7 @@ function App() {
       <About />
       <Projects /> 
       <Skills />
+      <FAQ />
       <Contact />
       <Footer />   
     </div>
